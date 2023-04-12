@@ -22,10 +22,7 @@ public class Venda implements Serializable{
 	@Column(name="comanda", nullable = false)
 	private Long comanda;
 	
-	@Column(name="qtdEstoque", nullable = false)
-	private int qtdEstoque;
-	
-	@Column(name="precoUnidade", nullable = false)
-	private Double precoUnidade;
+	@Column(name="valorTotalCompra", nullable = false)
+	private Double valorTotalCompra;
 
 }
