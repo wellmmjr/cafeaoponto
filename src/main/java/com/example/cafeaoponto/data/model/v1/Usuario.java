@@ -21,7 +21,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
-@Table(name="users")
+@Table(name="usuario")
 public class Usuario implements UserDetails, Serializable{
 
 

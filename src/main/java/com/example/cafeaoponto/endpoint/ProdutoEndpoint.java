@@ -72,7 +72,7 @@ public class ProdutoEndpoint {
 		
 		var sortDirection = "desc".equalsIgnoreCase(sort) ? Direction.DESC : Direction.ASC;
 		
-		Pageable pageable = PageRequest.of(page, limit, Sort.by(sortDirection, "firstName"));
+		Pageable pageable = PageRequest.of(page, limit, Sort.by(sortDirection, "nome"));
 		
 		Page<ProdutoDTO> persons = services.findAll(pageable);
 		

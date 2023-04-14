@@ -16,7 +16,11 @@ public class ProdutoDTO extends ResourceSupport implements Serializable {
 	@Mapping("id")
 	@JsonProperty("id")
 	private Long key;
+	
 	private String nome;
+	
+	private String descricao;
+	
 	private int qtdProduto;
 	
 	public ProdutoDTO() {
@@ -49,6 +53,14 @@ public class ProdutoDTO extends ResourceSupport implements Serializable {
 
 	public void setKey(Long key) {
 		this.key = key;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 	
 	
