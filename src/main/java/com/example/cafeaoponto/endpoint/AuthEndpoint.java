@@ -1,4 +1,4 @@
-package com.example.cafeaoponto.services;
+package com.example.cafeaoponto.endpoint;
 
 import static org.springframework.http.ResponseEntity.ok;
 
@@ -70,4 +70,5 @@ public class AuthEndpoint {
 			throw new BadCredentialsException("Invalid username or password");
 		}
 	}
+	
 }
